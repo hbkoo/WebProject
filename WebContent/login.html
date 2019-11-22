@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>欢迎</title>
+
+<script type="text/javascript">
+        //防止页面后退
+        history.pushState(null, null, document.URL);
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, document.URL);
+        });
+</script>
+
+<style type="text/css">
+/*body {
+	background: url("pictures/background.jpg") no-repeat;
+	background-size: 100%;
+	font-size: 18px;
+	color: #1d1007;
+	line-height: 24px
+}*/
+body {
+	background: url("pictures/background.jpg") no-repeat;
+	background-size: 100%;
+	font-size: 18px;
+	color: #1d1007;
+	line-height: 24px;
+	padding: 0;
+	margin: 0;
+}
+
+#wrap {
+	height: 380px;
+	width: 100;
+	margin-left: 90px;
+	filter: alpha(Opacity = 70); /*IE*/
+	-moz-opacity: 0.7; /*火狐*/
+	opacity: 0.9; /*谷歌*/
+}
+
+#wrap .logGet {
+	height: 286px;
+	width: 257px;
+	background-color: #FFFFFF;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.logC  input {
+	width: 100%;
+	height: 32px;
+	background-color: #ee7700;
+	border: none;
+	color: white;
+	font-size: 13px;
+}
+
+.logGet .logD.logDtip .p1 {
+	display: inline-block;
+	font-size: 28px;
+	margin-top: 30px;
+	width: 86%;
+}
+
+#wrap .logGet .logD.logDtip {
+	width: 86%;
+	border-bottom: 1px solid #ee7700;
+	margin-bottom: 42px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.logGet .lgD img {
+	position: absolute;
+	top: 12px;
+	left: 8px;
+}
+
+.logGet .lgD input {
+	width: 100%;
+	height: 30px;
+	text-indent: 2.5rem;
+}
+
+#wrap .logGet .lgD {
+	width: 86%;
+	position: relative;
+	margin-bottom: 21px;
+	margin-top: 21px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#wrap .logGet .logC {
+	width: 86%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+</style>
+</head>
+<body>
+	
+<div class="wrap" id="wrap">
+	<div class="logGet">
+		<!-- 头部提示信息 -->
+		<div class="logD logDtip">
+			<p class="p1">登录</p>
+		</div>
+		<!-- 输入框 -->
+		<form action="login" method="post">
+			<div class="lgD">
+				<img src="img/logName.png" width="20" height="20" alt=""/>
+				<input type="text" placeholder="输入用户名" name="username" />
+			</div>
+			<div class="lgD">
+				<img src="img/logPwd.png" width="20" height="20" alt=""/>
+				<input type="password" placeholder="输入用户密码" name="password"/>
+			</div>
+			
+			<div class="logC">
+				<input type="submit" value="登录">
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

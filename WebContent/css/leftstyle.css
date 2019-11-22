@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	font-size:62.5%; /* 10÷16=62.5% */}
+body{
+	font-size:24px;
+	background:#F8F8F8;
+	font-family:"宋体";}
+ul{
+	width:180px;
+	margin:0 auto;
+	background:#fff;
+	position:relative;
+	z-index:0;
+	padding:40px 0px 40px ;
+	-webkit-box-shadow: #999 0px 0px 8px;
+    -moz-box-shadow: #999 0px 0px 8px;
+    box-shadow: #999 0px 0px 8px;
+}
+ul li{
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-bottom:1px solid #F8F8F8;
+	list-style-type:none;
+}	
+ul li a{
+	color:#666;
+	display:block;
+	text-decoration:none;}	
+ul li a:hover{
+	color:#FF5F3E;
+	text-decoration:underline;}	
+ul li a.hover{color:#FF5F3E;}	
+#lanPos{
+	width:225px;
+	height:40px;
+	line-height:40px;
+	background:#F8F8F8;
+	border-left:5px solid #FF5F3E;
+	position:absolute;
+	left:-5px;
+	top:0;
+	z-index:-1;
+	transition:top .2s;
+}

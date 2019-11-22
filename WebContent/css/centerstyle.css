@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+body {
+	background:#F8F8F8;
+	background-size: 100%;
+	margin:0;
+	font-size: 18px;
+	color: #1d1007;
+	line-height: 24px
+}
+
+.first { /*第一块*/
+	height: 70px;
+	border: 0px #333 solid;
+	background-color:#EEC591;
+	margin: 2px;
+	border-radius:1px;
+	-webkit-box-shadow: #999 0px 0px 8px;
+    -moz-box-shadow: #999 0px 0px 8px;
+    box-shadow: #999 0px 0px 8px;
+}
+
+#keyword { /*搜索输入框*/
+	border: 1px solid #ccc;
+	padding: 4px 0px;
+	border-radius: 5px; /*css3属性IE不支持*/
+	padding-left: 5px;
+	margin-top: 2px;
+	width: 250px;
+	height: 30px;
+	background: #F0FFFF
+}
+
+#submit { /*提交按钮*/
+	border: 1px solid #ccc;
+	padding: 7px 0px;
+	border-radius: 5px; /*css3属性IE不支持*/
+	padding-left: 2px;
+	padding-right: 2px;
+	width: 50px;
+}
+
+label {
+	margin: 10px;
+}
+
+.a-radio {
+	display: none;
+}
+
+.b-radio {
+	display: inline-block;
+	border: 1px solid #ccc;
+	width: 16px;
+	height: 16px;
+	border-radius: 2px;
+	vertical-align: middle;
+	margin-right: 5px;
+	position: relative;
+}
+
+.b-radio:before {
+	content: '';
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background: rgb(143, 188, 238);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -5px;
+	margin-top: -5px;
+	border-radius: 2px;
+	display: none;
+}
+
+.a-radio:checked ~.b-radio:before {
+	display: block;
+}
+
+.second { /*第二块*/
+	width: 49%;
+	border: 1px #333 dotted;
+	margin: 4px;
+	float: left;
+}
+
+.third { /*第三块*/
+	width: 48%;
+	border: 1px #333 dotted;
+	margin: 4px;
+	float: left;
+	border-radius:4px;
+	-webkit-box-shadow: #999 0px 0px 8px;
+    -moz-box-shadow: #999 0px 0px 8px;
+    box-shadow: #999 0px 0px 8px;
+}
+
+.resultList { /*查询结果*/
+	margin-left: 2px;
+	margin-top: 4px;
+	margin-right: 16px;
+	position: relative;
+	overflow-y: auto;
+	width: 98%;
+	height: 400px;
+}
+
+.listitem { /*列表一行*/
+	height: 45px;
+	padding: 4px;
+	margin-bottom: 3px;
+	padding-left: 50px;
+	font-weight: bold; /*文字粗体*/
+	font-family: 宋体;
+	letter-spacing: 1pt;
+	background:#fff;
+	text-align: left;
+	z-index: 9;
+	border-radius:1px;
+	-webkit-box-shadow: #999 0px 0px 8px;
+    -moz-box-shadow: #999 0px 0px 8px;
+    box-shadow: #999 0px 0px 8px;
+	
+}
+
+.listtitle {
+	font-weight: bold; /*文字粗体*/
+	color: black;
+	padding-left: 16px;
+	-webkit-box-shadow: #999 0px 0px 8px;
+    -moz-box-shadow: #999 0px 0px 8px;
+    box-shadow: #999 0px 0px 8px;
+}
+
+.title, .author, .publisher, .isbn { /*书籍信息*/
+	padding-left:4px;
+	height: 30px;
+	font-weight: bold; /*文字粗体*/
+	color: black;
+}
+
+.picture { /*图片div*/
+	margin-left:4px;
+	margin-top: 2px;
+	width: 33%;
+	height: 180px;
+	float: left;
+}
+
+.info { /*书籍信息div*/
+	width: 64%;
+	height: 180px;
+	float: left;
+}
+
+.content { /*简介*/
+	margin-left:6px;
+	margin-top: 2px;
+	font-weight: bold; /*文字粗体*/
+	letter-spacing: 1pt; /*间距*/
+	float: left;
+}
+
+font {
+	size: 5;
+	face: 黑体;
+	color: black;
+}
